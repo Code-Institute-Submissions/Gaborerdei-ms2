@@ -19,9 +19,13 @@
      border-radius: 10px;
  }
 
- h1 {
+ #htitle {
      color: orange;
-     font-family: 'Irish Grover';
+     font-family: 'Source-Sans-3', cursive;
      font-weight: bold;
      font-size: 2em;
+ }
+
+ .hdescription {
+     color: #fafafa;
  }
