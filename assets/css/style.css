@@ -1,4 +1,5 @@
  body {
-     background-image: url(../images/background.jpg);
-     background-repeat: no-repeat;
+     background-image: linear-gradient(0deg, #e4e8f2,
+             #fcfc05);
+     background-size: 3em;
  }
