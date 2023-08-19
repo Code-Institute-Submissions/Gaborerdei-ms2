@@ -19,8 +19,9 @@
      border-radius: 10px;
  }
 
- #htitle {
+ h1 {
      color: orange;
+     font-family: 'Irish Grover';
+     font-weight: bold;
+     font-size: 2em;
  }
-
- 
