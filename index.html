@@ -18,9 +18,27 @@
         />
       </div>
       <div>
-        <h1 id="htitle">"Exploring 10s with Math Marvels"</h1>
+        <h1 id="htitle">"Exploring 10s with Math Turtle"</h1>
         <p class="hdescription">Play and learn adding up to 10!</p>
       </div>
     </header>
+
+    <p id="question">What is the correct answer?</p>
+
+    <div>
+        <div id="user-input">
+            <p id="mtext">Hi, I'm Bob.<br>What's your name?</p>
+            <label for="user"></label>
+            <input type="text" id="user" name="user" maxlength=10 placeholder="Type your name">
+            <button data-type="" id="submit-btn" class="blue-btn" aria-label="start and reset the game">Play with me</button>
+    </div>
+    <div class="game-area">
+
+    </div>
+
+    <div class="score-area">
+        <p class="scores">Correct answers <span id="score"></span></p>
+    </div>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
