@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
@@ -29,12 +28,20 @@
 
     <div>
         <div id="user-input">
-            <p id="mtext">Hi, I'm Bob.<br>What's your name?</p>
+            <p id="mtext">Hi, I'm Turtley.<br>What's your name?</p>
             <label for="user"></label>
             <input type="text" id="user" name="user" maxlength=10 placeholder="Type your name">
             <button data-type="" id="submit-btn" class="blue-btn" aria-label="start and reset the game">Play with me</button>
     </div>
     <div class="game-area">
+        <button class="btn btn--big btn--red" id="start-btn" aria-label="start button">Start</button>
+        <button class="btn btn--big btn--green" aria-label="reset button">Reset</button>
+
+        <p id="tdisplay">
+            <i id="timer" class="fa-solid fa-hourglass"></i>
+            <span id="seconds">45</span>
+        </p>
+
          <div class="question-area"></div>
          <span id="operand1">0</span>
          <span id="operator">+</span>
@@ -43,14 +50,12 @@
         <button class="a-btn" id="btn1" aria-label="answer button1" >4</button>
         <button class="a-btn" id="btn2" aria-label="answer button2" >5</button>
 
-        <p class="answer-message">Enter answer</p>
-        <input id="answer-box" type="number">
-        <button class="btn btn--gray">Submit answer </button>
     </div>
 
     <div class="score-area">
         <p class="scores">Correct answers <span id="score"></span></p>
     </div>
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/2b81d65df0.js" crossorigin="anonymous"></script>
   </body>
 </html>
