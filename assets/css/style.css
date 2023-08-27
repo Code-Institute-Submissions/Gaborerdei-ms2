@@ -84,5 +84,16 @@ body {
     margin: 10px auto auto auto;
     border: 2px solid #000000;
     border-radius: 3px;
-
 }
+
+/*Answer buttons*/
+#btn1,
+#btn2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #3f8abf;
+    border: 2px solid #c1dbed;
+    font-size: 40px;
+
+        {
