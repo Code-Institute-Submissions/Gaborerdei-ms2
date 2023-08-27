@@ -19,7 +19,8 @@ body {
     color: orange;
     font-family: 'Source-Sans-3', cursive;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin: 1px 0 1px 0;
 }
 
 .hdescription {
@@ -38,4 +39,11 @@ body {
     opacity: 0.7;
     border-radius: 10px;
     display: block;
+}
+
+/*Timer */
+
+.fa-solid {
+    font-weight: 100;
+    font-size: 1em;
 }
