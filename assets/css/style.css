@@ -17,7 +17,7 @@ body {
 }
 
 #htitle {
-    color: orange;
+    color: #f5f5f5;
     font-family: 'Source-Sans-3', cursive;
     font-weight: bold;
     font-size: 1.5em;
@@ -29,7 +29,7 @@ body {
 }
 
 #game {
-    background-color: #f9f0c6;
+    background-color: #F6D064;
     box-sizing: border-box;
     width: 50vw;
     max-height: 550px;
@@ -60,6 +60,20 @@ body {
     width: 130px;
     margin: 20px 20px 20px 20px;
     width: 130px;
+}
+
+/*Start and Reset button*/
+.btn--big {
+    background-color: #3f8abf;
+    color: #ecebeb;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border: 1px solid #fcfcfc;
+    margin-bottom: 40px;
+    padding: 4px 6px;
+    width: 100px;
+    height: 50px;
+    margin: 10px 10px 10px 10px;
 }
 
 /*Input field */
