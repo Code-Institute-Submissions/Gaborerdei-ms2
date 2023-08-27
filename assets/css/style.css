@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(0deg, black, rgba(62, 128, 234, 0.992));
+    background:
+        linear-gradient(0deg, rgb(238, 231, 231), rgba(62, 128, 234, 0.992));
     position: relative;
     padding: 0;
     margin: 0;
