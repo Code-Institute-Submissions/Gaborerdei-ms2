@@ -43,7 +43,7 @@ body {
 /*Timer */
 
 .fa-solid {
-    font-weight: 100;
+    font-weight: 100 !important;
     font-size: 1em;
 }
 
