@@ -4,7 +4,6 @@ body {
     position: relative;
     padding: 0;
     margin: 0;
-    overflow: hidden;
     display: block;
     text-align: center;
 }
@@ -96,4 +95,22 @@ body {
     border: 2px solid #c1dbed;
     font-size: 40px;
 
-        {
+}
+
+/*Operation numbers style*/
+
+#operation {
+    font-size: 250%;
+    font-weight: 400;
+    padding: 5px 10px;
+    color: #00202e;
+    font-family: 'Sans-Source-3', sans-serif;
+}
+
+#mtext {
+    margin-top: 10px;
+    font-size: 160%;
+    font-weight: 400;
+    color: #30383E;
+    font-family: 'Source-Sans-3', cursive;
+}
