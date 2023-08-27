@@ -47,3 +47,18 @@ body {
     font-weight: 100;
     font-size: 1em;
 }
+
+/*Play with Me button */
+
+.blue-btn {
+    background-color: #ecebeb;
+    color: #000000;
+    border-radius: 2px;
+    border: 2px solid #000000;
+    margin-bottom: 40px;
+    padding: 4px 6px;
+    width: 130px;
+    margin: 20px 20px 20px 20px;
+    padding: 4px 6px;
+    width: 130px;
+}
