@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+let gname = "Guest";
 document.getElementById("submit-btn").addEventListener("click", function (e) {
 
     //hide user input block
@@ -17,5 +18,10 @@ document.getElementById("submit-btn").addEventListener("click", function (e) {
 
     //show game block
     document.getElementById("game").style.display = "block";
+
+    //set correct name
+    let inputElement = document.getElementById("user");
+    if (inputElement.value.lenght > 0)
+        gname = document.getElementById("user").value;
 });
 
