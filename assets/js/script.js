@@ -2,9 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    document.getElementById("user-input").style.display = "block";
+    document.getElementById("game").style.display = "none";
 });
 
-document.getElementById("submit-btn").addEventListener("click", function (e) {
-
-
-};
