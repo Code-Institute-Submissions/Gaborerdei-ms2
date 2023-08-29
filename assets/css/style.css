@@ -107,10 +107,19 @@ body {
     font-family: 'Sans-Source-3', sans-serif;
 }
 
-#mtext {
+/*Game area text*/
+
+#mtext,
+#game-text {
     margin-top: 10px;
     font-size: 160%;
     font-weight: 400;
     color: #30383E;
     font-family: 'Source-Sans-3', cursive;
+}
+
+.fa-regular,
+.far {
+    font-weight: 400;
+    color: red;
 }
