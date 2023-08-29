@@ -24,31 +24,30 @@
       </div>
     </header>
 
-    <p id="question">What is the correct answer?</p>
+    <div id="user-input">
+      <p id="mtext">Hi, I'm Turtley.<br />What's your name?</p>
+      <label for="user"></label>
+      <input
+        type="text"
+        id="user"
+        name="user"
+        maxlength="10"
+        placeholder="Type your name..."
+      />
+      <button
+        id="submit-btn"
+        class="blue-btn"
+        aria-label="start and reset the game"
+      >
+        Play with me
+      </button>
+    </div>
 
     <div id="game">
       <div>
-        <div id="user-input">
-          <p id="mtext">Hi, I'm Turtley.<br />What's your name?</p>
-          <label for="user"></label>
-          <input
-            type="text"
-            id="user"
-            name="user"
-            maxlength="10"
-            placeholder="Type your name..."
-          />
-          <button
-            id="submit-btn"
-            class="blue-btn"
-            aria-label="start and reset the game"
-          >
-            Play with me
-          </button>
-        </div>
-
         <div class="game-area">
           <i class="fa-regular fa-circle-info"></i>
+          <p id="question">What is the correct answer?</p>
           <button
             class="btn btn--big btn--red"
             id="start-btn"
