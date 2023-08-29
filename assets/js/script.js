@@ -23,5 +23,8 @@ document.getElementById("submit-btn").addEventListener("click", function (e) {
     let inputElement = document.getElementById("user");
     if (inputElement.value.lenght > 0)
         gname = document.getElementById("user").value;
+
+    //update game text
+    document.getElementById("game-text").innerText = gname + ", what is the correct answer?";
 });
 
