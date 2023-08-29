@@ -24,6 +24,8 @@
       </div>
     </header>
 
+    <p id="question">What is the correct answer?</p>
+
     <div id="user-input">
       <p id="mtext">Hi, I'm Turtley.<br />What's your name?</p>
       <label for="user"></label>
@@ -45,23 +47,29 @@
 
     <div id="game">
       <div id="game-text"></div>
-        <div class="game-area">
-          <i class="fa-regular fa-circle-info"></i>
-          <button
-            class="btn btn--big btn--red"
-            id="start-btn"
-            aria-label="start button"
-          >
-            Start
-          </button>
-          <button class="btn btn--big btn--green" aria-label="reset button">
-            Reset
-          </button>
 
-          <p><i id="timer" class="fa-solid fa-hourglass"></i></p>
-        </div>
+      <div class="game-area">
+        <i class="fa-regular fa-circle-info"></i>
+        <button
+          class="btn btn--big btn--red"
+          id="start-btn"
+          aria-label="start button"
+        >
+          Start
+        </button>
+        <button
+          class="btn btn--big btn--green"
+          id="reset-btn"
+          aria-label="reset button"
+          disabled
+        >
+          Reset
+        </button>
 
-        <div id="operation" class="question-area"></div>
+        <p><i id="timer" class="fa-solid fa-hourglass"></i></p>
+      </div>
+
+      <div id="operation" class="question-area">
         <span id="operand1">1</span>
         <span id="operator">+</span>
         <span id="operand2">3</span>
@@ -84,9 +92,10 @@
         >
           -
         </button>
-        <div class="score-area">
-            <p class="scores">Correct answers: 0<span id="score"></span></p>
-        </div>
+      </div>
+
+      <div class="score-area">
+        <p class="scores">Correct answers: <span id="score">0</span></p>
       </div>
     </div>
 
