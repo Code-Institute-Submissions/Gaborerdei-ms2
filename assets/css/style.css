@@ -165,3 +165,9 @@ body {
     color: #00202e;
     font-family: 'Sans-Source-3', sans-serif;
 }
+
+/*Instruction area*/
+
+.instructions-area {
+    display: none;
+}
