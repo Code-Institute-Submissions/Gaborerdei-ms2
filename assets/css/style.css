@@ -107,6 +107,14 @@ body {
 
 }
 
+#btn1:hover {
+    background: #c8ddc8;
+}
+
+#btn2:hover {
+    background: #c8ddc8;
+}
+
 .question-area {
     margin-top: 20px;
 }
