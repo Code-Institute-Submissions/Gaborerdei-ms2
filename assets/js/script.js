@@ -49,4 +49,11 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
             document.getElementById('timer').textContent = '   Time\'s up!';
         }
     }
+    //disable start button
+    e.target.disabled = true;
+
+    //enable reset
+    document.getElementById("reset-btn").disabled = false;
 });
+
+
