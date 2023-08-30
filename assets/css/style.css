@@ -118,8 +118,12 @@ body {
     font-family: 'Source-Sans-3', cursive;
 }
 
-.fa-regular,
-.far {
-    font-weight: 400;
-    color: red;
+#rules-btn {
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 30px;
+    border: none;
+    background-color: #F6D064;
+    float: right;
 }
