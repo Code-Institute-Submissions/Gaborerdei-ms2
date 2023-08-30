@@ -170,3 +170,9 @@ body {
 .instructions-area {
     display: none;
 }
+
+.btn:disabled {
+    cursor: not-allowed;
+    color: white;
+    background-color: #e09dd0;
+}
