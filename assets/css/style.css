@@ -68,11 +68,13 @@ body {
     font-size: 1.5em;
     border-radius: 10px;
     border: 1px solid #fcfcfc;
+    margin-top: 30px;
     margin-bottom: 40px;
     padding: 4px 6px;
     width: 100px;
     height: 50px;
-    margin: 10px 10px 10px 10px;
+    margin: 25px 10px 10px 70px;
+
 }
 
 /*Input field */
@@ -88,6 +90,7 @@ body {
 /*Answer buttons*/
 #btn1,
 #btn2 {
+    margin: 20px 20px 0 20px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -95,6 +98,10 @@ body {
     border: 2px solid #c1dbed;
     font-size: 40px;
 
+}
+
+.question-area {
+    margin-top: 20px;
 }
 
 /*Operation numbers style*/
@@ -117,6 +124,8 @@ body {
     color: #30383E;
     font-family: 'Source-Sans-3', cursive;
 }
+
+/*Info button in gane area*/
 
 #rules-btn {
     margin-top: 5px;
