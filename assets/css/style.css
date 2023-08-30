@@ -6,6 +6,9 @@ body {
     margin: 0;
     display: block;
     text-align: center;
+    height: 100vh;
+    width: 100vw;
+
 }
 
 #logo-image {
@@ -59,6 +62,12 @@ body {
     width: 130px;
     margin: 20px 20px 20px 20px;
     width: 130px;
+}
+
+.blue-btn:hover {
+    background-color: rgba(62, 128, 234, 0.992);
+    color: white;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
 }
 
 /*Start and Reset button*/
@@ -115,20 +124,6 @@ body {
     background: #c8ddc8;
 }
 
-.question-area {
-    margin-top: 20px;
-}
-
-/*Operation numbers style*/
-
-#operation {
-    font-size: 250%;
-    font-weight: 400;
-    padding: 5px 10px;
-    color: #00202e;
-    font-family: 'Sans-Source-3', sans-serif;
-}
-
 /*Game area text*/
 
 #mtext,
@@ -138,6 +133,10 @@ body {
     font-weight: 400;
     color: #30383E;
     font-family: 'Source-Sans-3', cursive;
+}
+
+.question-area {
+    margin-top: 20px;
 }
 
 /*Info button in gane area*/
@@ -151,4 +150,18 @@ body {
     background-color: #F6D064;
     color: red;
     float: right;
+}
+
+#rules-btn:hover {
+    background: #610202;
+}
+
+/*Operation numbers style*/
+
+#operation {
+    font-size: 250%;
+    font-weight: 400;
+    padding: 5px 10px;
+    color: #00202e;
+    font-family: 'Sans-Source-3', sans-serif;
 }
