@@ -47,6 +47,12 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
         if (timeLeft === 0) {
             clearInterval(timer);
             document.getElementById('timer').textContent = '   Time\'s up!';
+
+            //disable Reset button
+            document.getElementById("reset-btn").disabled = true;
+
+            //enable Start button
+            document.getElementById("start-btn").disabled = false;
         }
     }
     //disable start button
@@ -55,5 +61,11 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
     //enable reset
     document.getElementById("reset-btn").disabled = false;
 });
+
+function GenerateRandomNumbers() {
+    //Creates two random numbers between 0 and 5
+    let num1 = Math.floor(Math.random() * 6);
+    let num2 = Math.floor(Math.random() * 6);
+}
 
 
