@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 let gname = "Guest";
+let timer;
+let correctGuess = 0;
 
 document.getElementById("submit-btn").addEventListener("click", function (e) {
 
@@ -66,6 +68,9 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
 function GenerateRandomNumbers() {
     let num1 = Math.floor(Math.random() * 6);
     let num2 = Math.floor(Math.random() * 6);
+
+    DisplayQuestion(num1, num2);
+    return num1 + num2;
 }
 
 //Display question numbers
@@ -74,5 +79,19 @@ function DisplayQuestion(operand1, operand2) {
     document.getElementById('operand2').textcontent = operand2;
     dovument.getElementById('operator').textcontent = "+";
 }
+
+function GenerateRandomExcluding(min, max, exclude) {
+    let random;
+    while (!random) {
+        const x = Math.floor(Math.random() * (max - min + 1)) + min;
+        if (exclude.indexOf(x) === -1) random = x;
+    }
+    return random;
+}
+
+//generate addition
+const correctResult = GenerateRandomNumbers();
+correctGuess = correctResult;
+
 
 
