@@ -62,10 +62,17 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
     document.getElementById("reset-btn").disabled = false;
 });
 
+//Creates two random numbers between 0 and 5
 function GenerateRandomNumbers() {
-    //Creates two random numbers between 0 and 5
     let num1 = Math.floor(Math.random() * 6);
     let num2 = Math.floor(Math.random() * 6);
+}
+
+//Display question numbers
+function DisplayQuestion(operand1, operand2) {
+    document.getElementById('operand1').textcontent = operand1;
+    document.getElementById('operand2').textcontent = operand2;
+    dovument.getElementById('operator').textcontent = "+";
 }
 
 

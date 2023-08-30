@@ -74,29 +74,60 @@
         <span id="operator">+</span>
         <span id="operand2">3</span>
 
-        <button
-          data-type="addition"
-          class="btn"
-          id="btn1"
-          aria-label="answer button1"
-          onclick="checkAnswer()"
-        >
-          -
-        </button>
-        <button
-          data-type="addition"
-          class="btn"
-          id="btn2"
-          aria-label="answer button2"
-          onclick="checkAnswer()"
-        >
-          -
-        </button>
+        <div id="answer-area">
+          <button
+            data-type="addition"
+            class="btn"
+            id="btn1"
+            aria-label="answer button1"
+            onclick="checkAnswer()"
+          >
+            -
+          </button>
+          <button
+            data-type="addition"
+            class="btn"
+            id="btn2"
+            aria-label="answer button2"
+            onclick="checkAnswer()"
+          >
+            -
+          </button>
+        </div>
       </div>
 
       <div class="score-area">
         <p class="scores">Correct answers: <span id="score">0</span></p>
       </div>
+    </div>
+
+    <div class="instructions-area">
+      <p class="instructions">Click on the Start button to PLAY the game.</p>
+      <p class="instructions">You will see the addition of two numbers.</p>
+      <p class="instructions">I will give you 2 answers.</p>
+      <p class="instructions">
+        If you know the correct answer, click fast on it and carry on because
+        the time goes!
+      </p>
+      <p class="instructions">
+        You will get no score and crying emoji if the answer is incorrect.
+      </p>
+      <p class="instructions">
+        If the answer is correct, the happy emoji appears and you will get a
+        score.
+      </p>
+      <p class="instructions">Have fun!</p>
+      <button
+        id="audio-btn"
+        class="btn__navigation--back"
+        aria-label="read rules by Bob"
+      >
+        <i id="off" class="fa-solid fa-volume-xmark" style="display: none"></i>
+        <i id="on" class="fa-solid fa-volume-high" style="display: block"></i>
+      </button>
+      <audio id="welcome" src="assets/bob-speak.mp3">
+        Your browser does not support the audio element.
+      </audio>
     </div>
 
     <script src="assets/js/script.js"></script>
