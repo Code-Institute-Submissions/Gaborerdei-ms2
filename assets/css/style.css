@@ -152,7 +152,7 @@ body {
 }
 
 #rules-btn:hover {
-    background: #610202;
+    color: #610202;
 }
 
 /*Operation numbers style*/
@@ -165,10 +165,15 @@ body {
     font-family: 'Sans-Source-3', sans-serif;
 }
 
-/*Instruction area*/
+/*Instruction area(game rules)*/
 
-.instructions-area {
+#instructions-area {
     display: none;
+    position: fixed;
+    z-index: 111121;
+    top: 31%;
+    left: 25%;
+    background: white;
 }
 
 .btn:disabled {
