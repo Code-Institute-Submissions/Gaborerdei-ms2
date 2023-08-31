@@ -189,3 +189,15 @@ body {
     padding: 0 10px;
     display: none;
 }
+
+/*Instructions, game rules close button*/
+
+#close-btn {
+    font-size: 3rem;
+    color: var(--clr-neutral-100);
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #F40B0B;
+    float: right;
+}
