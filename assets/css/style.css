@@ -187,4 +187,5 @@ body {
     float: left;
     font-size: 150%;
     padding: 0 10px;
+    display: none;
 }
