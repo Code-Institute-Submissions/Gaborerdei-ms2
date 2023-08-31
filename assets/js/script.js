@@ -1,13 +1,14 @@
 //Wait for the DOM to finish loading before run the game
-
 document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+//Create variables
 let gname = "Guest";
 let timer;
 let correctGuess = 0;
 
+//Submit button event
 document.getElementById("submit-btn").addEventListener("click", function (e) {
 
     //show game block
@@ -80,6 +81,7 @@ function DisplayQuestion(operand1, operand2) {
     dovument.getElementById('operator').textcontent = "+";
 }
 
+//Start the game, create additions
 function newRound() {
 
     //generate addition
@@ -87,4 +89,13 @@ function newRound() {
     const fakeResult = GenerateRandomExcluding(1, 5, [correctResult]);
 }
 
+//generate random excluding
+function GenerateRandomExcluding(min, max, exclude) {
+    let random;
+    while (!random) {
+        const x = Math.floor(Math.random() * (max - min + 1)) + min;
+        if (exclude.indexOf(x) === -1) random = x;
+    }
+    return random;
+}
 
