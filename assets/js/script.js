@@ -87,6 +87,13 @@ function newRound() {
     //generate addition
     const correctResult = GenerateRandomNumbers();
     const fakeResult = GenerateRandomExcluding(1, 5, [correctResult]);
+
+    //decide where to put the correct result
+    const correctButton = Math.floor(Math.random() * 2) + 1;
+    if (correctButton === 1) {
+        document.getElementById("btn1").textContent = correctResult;
+        document.getElementById("btn2").textContent = fakeResult;
+    }
 }
 
 //generate random excluding
@@ -98,4 +105,5 @@ function GenerateRandomExcluding(min, max, exclude) {
     }
     return random;
 }
+
 
