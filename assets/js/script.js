@@ -80,18 +80,11 @@ function DisplayQuestion(operand1, operand2) {
     dovument.getElementById('operator').textcontent = "+";
 }
 
-function GenerateRandomExcluding(min, max, exclude) {
-    let random;
-    while (!random) {
-        const x = Math.floor(Math.random() * (max - min + 1)) + min;
-        if (exclude.indexOf(x) === -1) random = x;
-    }
-    return random;
+function newRound() {
+
+    //generate addition
+    const correctResult = GenerateRandomNumbers();
+    const fakeResult = GenerateRandomExcluding(1, 5, [correctResult]);
 }
-
-//generate addition
-const correctResult = GenerateRandomNumbers();
-correctGuess = correctResult;
-
 
 
