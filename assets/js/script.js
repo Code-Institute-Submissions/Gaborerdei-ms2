@@ -87,6 +87,7 @@ function newRound() {
     //generate addition
     const correctResult = GenerateRandomNumbers();
     const fakeResult = GenerateRandomExcluding(1, 5, [correctResult]);
+    correctGuess = correctResult;
 
     //decide where to put the correct result
     const correctButton = Math.floor(Math.random() * 2) + 1;
