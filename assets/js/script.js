@@ -93,6 +93,9 @@ function newRound() {
     if (correctButton === 1) {
         document.getElementById("btn1").textContent = correctResult;
         document.getElementById("btn2").textContent = fakeResult;
+    } else {
+        document.getElementById("btn1").textContent = fakeResult;
+        document.getElementById("btn2").textContent = correctResult;
     }
 }
 
