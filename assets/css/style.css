@@ -194,7 +194,6 @@ body {
 
 #close-btn {
     font-size: 3rem;
-    color: var(--clr-neutral-100);
     cursor: pointer;
     border: none;
     background: none;
