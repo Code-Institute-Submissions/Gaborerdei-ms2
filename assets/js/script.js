@@ -112,4 +112,19 @@ function GenerateRandomExcluding(min, max, exclude) {
     return random;
 }
 
+//Rules info button event
+document.getElementById("rules-btn").addEventListener("click", function (e) {
+    if (document.getElementById("instruction-area").style.display == "block") {
+        document.getElementById("instruction-area").style.display = "none";
+    } else if (document.getElementById("instruction-area").style.display == "none") {
+        document.getElementById("instruction-area").style.display = "block";
+    } else {
+        document.getElementById("instruction-area").style.display = "block";
+    }
+});
+
+//Close game rules if you click on close button
+document.getElementById("close-btn").addEventListener("click", function (e) {
+    document.getElementById("instruction-area").style.display = "none";
+});
 
