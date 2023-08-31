@@ -181,3 +181,10 @@ body {
     color: rgb(173, 169, 169);
     background-color: #e09dd0;
 }
+
+#cry,
+#happy {
+    float: left;
+    font-size: 150%;
+    padding: 0 10px;
+}
