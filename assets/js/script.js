@@ -63,6 +63,8 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
 
     //enable reset
     document.getElementById("reset-btn").disabled = false;
+
+    newRound();
 });
 
 //Creates two random numbers between 0 and 5
