@@ -55,6 +55,10 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
 
             //enable Start button
             document.getElementById("start-btn").disabled = false;
+
+            //disable Answer buttons button
+            document.getElementById("btn1").disabled = true;
+            document.getElementById("btn2").disabled = true;
         }
     }
     //disable start button
@@ -165,5 +169,4 @@ document.getElementById("reset-btn").addEventListener("click", function (e) {
     document.getElementById("btn1").disabled = true;
     document.getElementById("btn2").disabled = true;
 
-    newRound();
 });
