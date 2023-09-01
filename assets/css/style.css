@@ -213,7 +213,7 @@ body {
         margin: 0px;
     }
 
-    .game-area {
+    #game {
         width: 320px;
         height: 430px;
     }
