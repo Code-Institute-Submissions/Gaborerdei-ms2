@@ -43,11 +43,9 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
     function updateTimer() {
         const currentTime = new Date().getTime();
         const timeLeft = Math.max(0, endTime - currentTime);
-
         const seconds = Math.floor(timeLeft / 1000);
 
         document.getElementById('timer').textContent = seconds;
-
         if (timeLeft === 0) {
             clearInterval(timer);
             document.getElementById('timer').textContent = '   Time\'s up!';
@@ -70,7 +68,6 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
 
 //Start the game, create additions
 function newRound() {
-
     //generate addition
     const correctResult = GenerateRandomNumbers();
     correctGuess = correctResult;
@@ -95,6 +92,7 @@ function GenerateRandomNumbers() {
     return num1 + num2;
 }
 
+//Generate random answers excluding the right answer
 function GenerateRandomExcluding(min, max, exclude) {
     let random;
     while (!random) {
@@ -104,9 +102,9 @@ function GenerateRandomExcluding(min, max, exclude) {
     return random;
 }
 
+//Check your answer is correct or not
 function checkAnswer() {
     var guess = parseInt(event.target.innerText);
-
     if (guess == correctGuess) {
         currentScore = currentScore + 1;
         document.getElementById("score").innerText = currentScore;
@@ -120,9 +118,8 @@ function checkAnswer() {
     newRound();
 }
 
-
+//Display addition questions
 function displayQuestion(operand1, operand2) {
-
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = "+";
@@ -161,7 +158,6 @@ document.getElementById("reset-btn").addEventListener("click", function (e) {
     document.getElementById("score").innerText = currentScore;
 
     //Hide cry and happy emoji
-
     document.getElementById("happy").style.display = "none";
     document.getElementById("cry").style.display = "none";
 });
