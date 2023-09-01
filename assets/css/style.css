@@ -200,3 +200,37 @@ body {
     color: #F40B0B;
     float: right;
 }
+
+
+/* Media for screen sizes from 481px wide and down */
+
+@media screen and (max-width: 481px) {
+    #game {
+        width: 320px;
+        height: 430px;
+    }
+
+    #instruction-area {
+        width: 21rem;
+        height: 22rem;
+    }
+
+    #question-area {
+        font-size: 100%;
+        font-weight: 400;
+        margin: 5px auto 5px auto;
+    }
+
+    #game-text {
+        font-size: 120%;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+
+    .fa-solid {
+        font-size: 12px;
+    }
+
+    #start-btn,
+    #reset-btn {}
+}
