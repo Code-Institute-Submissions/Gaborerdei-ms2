@@ -9,7 +9,6 @@ let timer;
 let correctGuess = 0;
 let currentScore = 0;
 
-
 //Submit button event
 document.getElementById("submit-btn").addEventListener("click", function (e) {
 
@@ -69,29 +68,14 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
     newRound();
 });
 
-//Creates two random numbers between 0 and 5
-function GenerateRandomNumbers() {
-    let num1 = Math.floor(Math.random() * 6);
-    let num2 = Math.floor(Math.random() * 6);
-
-    DisplayQuestion(num1, num2);
-    return num1 + num2;
-}
-
-//Display question numbers
-function DisplayQuestion(operand1, operand2) {
-    document.getElementById('operand1').textcontent = operand1;
-    document.getElementById('operand2').textcontent = operand2;
-    document.getElementById('operator').textcontent = "+";
-}
 
 //Start the game, create additions
 function newRound() {
 
     //generate addition
     const correctResult = GenerateRandomNumbers();
-    const fakeResult = GenerateRandomExcluding(1, 5, [correctResult]);
     correctGuess = correctResult;
+    const fakeResult = GenerateRandomExcluding(1, 5, [correctResult]);
 
     //decide where to put the correct result
     const correctButton = Math.floor(Math.random() * 2) + 1;
@@ -104,7 +88,16 @@ function newRound() {
     }
 }
 
-//generate random excluding
+function GenerateRandomNumbers() {
+    //Creates two random numbers between 0 and 5
+    let num1 = Math.floor(Math.random() * 6);
+    let num2 = Math.floor(Math.random() * 6);
+
+    displayQuestion(num1, num2);
+
+    return num1 + num2;
+}
+
 function GenerateRandomExcluding(min, max, exclude) {
     let random;
     while (!random) {
@@ -116,6 +109,7 @@ function GenerateRandomExcluding(min, max, exclude) {
 
 function checkAnswer() {
     var guess = parseInt(event.target.innerText);
+
     if (guess == correctGuess) {
         currentScore = currentScore + 1;
         document.getElementById("score").innerText = currentScore;
@@ -128,6 +122,13 @@ function checkAnswer() {
     newRound();
 }
 
+function displayQuestion(operand1, operand2) {
+
+    document.getElementById('operand1').textContent = operand1;
+    document.getElementById('operand2').textContent = operand2;
+    document.getElementById('operator').textContent = "+";
+
+}
 
 //Rules info button event
 document.getElementById("rules-btn").addEventListener("click", function (e) {
@@ -140,10 +141,8 @@ document.getElementById("rules-btn").addEventListener("click", function (e) {
     }
 });
 
-//Close game rules window if you click on close button
+//Close game rules if you click on close button
 document.getElementById("close-btn").addEventListener("click", function (e) {
     document.getElementById("instruction-area").style.display = "none";
 });
-
-
 
