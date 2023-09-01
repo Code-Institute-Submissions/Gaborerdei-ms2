@@ -227,7 +227,7 @@ body {
     #question-area {
         font-size: 100%;
         font-weight: 400;
-
+        margin: 5px auto 5px auto;
     }
 
     #game-text {
