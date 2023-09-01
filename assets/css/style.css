@@ -202,10 +202,15 @@ body {
 }
 
 
+
 /* Media for screen sizes from 481px wide and down */
 
-@media screen and (max-width: 481px) {
-    #game {
+@media screen and (max-width: 830px) {
+    .btn--big {
+        margin: 0px;
+    }
+
+    .game-area {
         width: 320px;
         height: 430px;
     }
@@ -213,12 +218,13 @@ body {
     #instruction-area {
         width: 21rem;
         height: 22rem;
+        left: 0%;
     }
 
     #question-area {
         font-size: 100%;
         font-weight: 400;
-        margin: 5px auto 5px auto;
+
     }
 
     #game-text {
@@ -231,6 +237,4 @@ body {
         font-size: 12px;
     }
 
-    #start-btn,
-    #reset-btn {}
 }
