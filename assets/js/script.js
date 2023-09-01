@@ -67,6 +67,10 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
     //enable reset
     document.getElementById("reset-btn").disabled = false;
 
+    //enable Answer buttons button
+    document.getElementById("btn1").disabled = false;
+    document.getElementById("btn2").disabled = false;
+
     newRound();
 });
 
