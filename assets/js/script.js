@@ -159,4 +159,9 @@ document.getElementById("reset-btn").addEventListener("click", function (e) {
     // Reset current score
     currentScore = 0;
     document.getElementById("score").innerText = currentScore;
+
+    //Hide cry and happy emoji
+
+    document.getElementById("happy").style.display = "none";
+    document.getElementById("cry").style.display = "none";
 });
