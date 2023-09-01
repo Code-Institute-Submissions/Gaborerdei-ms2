@@ -243,4 +243,8 @@ body {
     #rules-btn {
         display: none;
     }
+
+    .btn--big {
+        margin: 0;
+    }
 }
