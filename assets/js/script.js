@@ -68,7 +68,6 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
     newRound();
 });
 
-
 //Start the game, create additions
 function newRound() {
 
@@ -92,9 +91,7 @@ function GenerateRandomNumbers() {
     //Creates two random numbers between 0 and 5
     let num1 = Math.floor(Math.random() * 6);
     let num2 = Math.floor(Math.random() * 6);
-
     displayQuestion(num1, num2);
-
     return num1 + num2;
 }
 
@@ -113,21 +110,22 @@ function checkAnswer() {
     if (guess == correctGuess) {
         currentScore = currentScore + 1;
         document.getElementById("score").innerText = currentScore;
-        document.getElementById("happy").style.display = "block";
-    } else {
+        document.getElementById("happy").style.display = "none";
         document.getElementById("cry").style.display = "block";
+    } else {
+        document.getElementById("cry").style.display = "none";
+        document.getElementById("happy").style.display = "block";
     }
-
     // Start a new round, similar to starting the game
     newRound();
 }
+
 
 function displayQuestion(operand1, operand2) {
 
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = "+";
-
 }
 
 //Rules info button event
