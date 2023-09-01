@@ -67,9 +67,7 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
     //enable reset
     document.getElementById("reset-btn").disabled = false;
 
-    //hide happy and cry emoji
-    document.getElementById("cry").style.display = "none";
-    document.getElementById("happy").style.display = "none";
+
 
     newRound();
 });
