@@ -144,3 +144,19 @@ document.getElementById("close-btn").addEventListener("click", function (e) {
     document.getElementById("instruction-area").style.display = "none";
 });
 
+document.getElementById("reset-btn").addEventListener("click", function (e) {
+
+    // Reset timer
+    clearInterval(timer);
+    document.getElementById('timer').textContent = '0';
+
+    // Disable reset button
+    e.target.disabled = true;
+
+    // Enable start button
+    document.getElementById("start-btn").disabled = false;
+
+    // Reset current score
+    currentScore = 0;
+    document.getElementById("score").innerText = currentScore;
+});
