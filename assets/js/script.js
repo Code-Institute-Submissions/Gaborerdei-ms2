@@ -67,8 +67,6 @@ document.getElementById("start-btn").addEventListener("click", function (e) {
     //enable reset
     document.getElementById("reset-btn").disabled = false;
 
-
-
     newRound();
 });
 
@@ -166,4 +164,8 @@ document.getElementById("reset-btn").addEventListener("click", function (e) {
     //Hide cry and happy emoji
     document.getElementById("happy").style.display = "none";
     document.getElementById("cry").style.display = "none";
+
+    //disable Answer buttons button
+    document.getElementById("btn1").disabled = true;
+    document.getElementById("btn2").disabled = true;
 });
