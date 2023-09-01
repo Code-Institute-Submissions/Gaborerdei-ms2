@@ -173,4 +173,6 @@ document.getElementById("reset-btn").addEventListener("click", function (e) {
     document.getElementById("btn1").disabled = true;
     document.getElementById("btn2").disabled = true;
 
+    newRound();
+
 });
