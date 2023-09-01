@@ -205,8 +205,8 @@ body {
 
 /* Media for screen sizes from 481px wide and down */
 
-@media screen and (max-width: 830px) {
-    .btn--big {
+@media screen and (max-width: 481px) {
+    .btn-big {
         margin: 0px;
     }
 
