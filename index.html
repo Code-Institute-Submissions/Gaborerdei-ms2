@@ -11,6 +11,7 @@
   <body>
     <header class="header">
       <style></style>
+      <!-- Logo image in header -->
       <div class="logo">
         <img
           id="logo-image"
@@ -23,7 +24,7 @@
         <p class="hdescription">Play and learn adding up to 10!</p>
       </div>
     </header>
-
+    <!-- Game login with username -->
     <div id="user-input">
       <p id="mtext">Hi, I'm Turtley.<br />What's your name?</p>
       <label for="user"></label>
@@ -43,6 +44,7 @@
       </button>
     </div>
 
+    <!-- Happy and cry emojis for the correct and wrong answer-->
     <div id="game">
       <span id="cry">&#128526;</span>
       <span id="happy">&#128557;</span>
@@ -50,6 +52,7 @@
         <i class="fa fa-info-circle" aria-hidden="true"></i>
       </button>
 
+      <!-- Game area START and RESET button -->
       <div id="game-text"></div>
       <div class="game-area">
         <button
@@ -68,14 +71,17 @@
           Reset
         </button>
 
+        <!-- Timer hourglass icon -->
         <p><i id="timer" class="fa-solid fa-hourglass"></i></p>
       </div>
 
+      <!-- Game question area, additions-->
       <div id="operation" class="question-area">
         <span id="operand1">1</span>
         <span id="operator">+</span>
         <span id="operand2">3</span>
 
+        <!-- Game answer area buttons, you can choos the correct answer -->
         <div id="answer-area">
           <button
             data-type="addition"
@@ -98,11 +104,13 @@
         </div>
       </div>
 
+      <!-- Game score, correct answers -->
       <div class="score-area">
         <p class="scores">Correct answers: <span id="score">0</span></p>
       </div>
     </div>
 
+    <!-- Game rules in pop up window -->
     <div id="instruction-area">
       <button id="close-btn">&times;</button>
       <p class="instructions">Click on the Start button to PLAY the game.</p>
