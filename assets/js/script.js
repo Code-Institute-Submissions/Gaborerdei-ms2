@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 let gname = "Guest";
 let timer;
 let correctGuess = 0;
+let currentScore = 0;
+
 
 //Submit button event
 document.getElementById("submit-btn").addEventListener("click", function (e) {
@@ -80,7 +82,7 @@ function GenerateRandomNumbers() {
 function DisplayQuestion(operand1, operand2) {
     document.getElementById('operand1').textcontent = operand1;
     document.getElementById('operand2').textcontent = operand2;
-    dovument.getElementById('operator').textcontent = "+";
+    document.getElementById('operator').textcontent = "+";
 }
 
 //Start the game, create additions
@@ -112,6 +114,21 @@ function GenerateRandomExcluding(min, max, exclude) {
     return random;
 }
 
+function checkAnswer() {
+    var guess = parseInt(event.target.innerText);
+    if (guess == correctGuess) {
+        currentScore = currentScore + 1;
+        document.getElementById("score").innerText = currentScore;
+        document.getElementById("happy").style.display = "block";
+    } else {
+        document.getElementById("cry").style.display = "block";
+    }
+
+    // Start a new round, similar to starting the game
+    newRound();
+}
+
+
 //Rules info button event
 document.getElementById("rules-btn").addEventListener("click", function (e) {
     if (document.getElementById("instruction-area").style.display == "block") {
@@ -123,8 +140,10 @@ document.getElementById("rules-btn").addEventListener("click", function (e) {
     }
 });
 
-//Close game rules if you click on close button
+//Close game rules window if you click on close button
 document.getElementById("close-btn").addEventListener("click", function (e) {
     document.getElementById("instruction-area").style.display = "none";
 });
+
+
 
